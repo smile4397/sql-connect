@@ -53,7 +53,10 @@ function registerUser() {
         }
         return response.json();
     })
-    .then(data => alert('User registered successfully!'))
+    .then(data => {
+        alert('User registered successfully!');
+        window.location.href="/success.html";
+    })
     .catch(error => alert('Error: ' + error.message));
 }
 </script>
